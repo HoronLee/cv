@@ -25,7 +25,7 @@ cv.zhilu.cyou
 
 ## 技术栈
 
-- 框架: [Nuxt 3](https://nuxt.com) (Vue 3)
+- 框架: [Nuxt 4](https://nuxt.com) (Vue 3)
 - 样式: [SCSS](https://sass-lang.com/) + [UnoCSS](https://unocss.dev/)
 - 图标: [Iconify](https://iconify.design/) + [Nuxt Icon](https://nuxt.com/modules/icon)
 
@@ -67,12 +67,7 @@ PHONE="你的电话"
 
 1. 启动开发服务器：`pnpm run dev`
 2. 浏览器访问 `http://localhost:3000`
-3. 按 `Ctrl + P` 打开打印界面
-4. 设置建议：
-   - 打印机：另存为PDF
-   - 布局：纵向
-   - 边距：无
-   - 缩放：100%
+3. 按 `Ctrl + P` 打开打印界面，即可通过“另存为PDF”打印机导出
 
 ## 部署
 

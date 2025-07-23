@@ -23,10 +23,6 @@ export default defineNuxtConfig({
         inlineStyles: false,
     },
 
-    future: {
-        compatibilityVersion: 4,
-    },
-
     routeRules: {
         // 网站图标
         '/favicon.ico': { redirect: 'https://wsrv.nl/?url=github.com/L33Z22L11.png%3fsize=96&mask=circle' },
@@ -41,22 +37,16 @@ export default defineNuxtConfig({
     },
 
     vite: {
-        css: {
-            preprocessorOptions: {
-                scss: {
-                    api: 'modern-compiler',
-                },
-            },
-        },
         server: {
             // 预先允许从其他域名访问开发环境，但 --host 才会在所有网络接口上启动监听
             allowedHosts: true,
         },
     },
 
+    // @keep-sorted
     modules: [
-        '@unocss/nuxt',
         '@nuxt/icon',
+        '@unocss/nuxt',
     ],
 
     icon: {

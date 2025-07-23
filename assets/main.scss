@@ -9,12 +9,14 @@
 }
 
 :root {
-    font-family: system-ui, sans-serif;
-    line-height: 1.5;
+    font-family: sans-serif;
+    line-height: 1.4;
     color-scheme: light dark;
 
-    &.dark {
-        background-color: #222;
+    @media screen {
+        margin: 1em auto;
+        max-width: 20cm;
+        background-color: #0055ff08;
     }
 }
 
@@ -28,18 +30,18 @@ p, li {
 }
 
 code, pre {
-    font-family: "Cascadia Code", "Noto Sans Mono", Consolas, monospace;
+    font-family: "Cascadia Code", "monospace", "Noto Sans Mono", Consolas, monospace;
 }
 
 menu, ol, ul {
-    padding-inline-start: 1em;
+    padding-inline-start: .75em;
 }
 
 li {
-    margin-block: 0.2em;
+    margin-block: 0.25em;
 
     &::marker {
-        opacity: 0.2;
+        content: "·";
     }
 }
 
