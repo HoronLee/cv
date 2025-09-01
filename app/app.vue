@@ -55,9 +55,7 @@ useSeoMeta({
 	<InfoSection title="个人技能">
 		<ul>
 			<li>掌握 Vue 3、Nuxt 4、TypeScript，熟练掌握响应式设计、UI/UX 优化</li>
-			<li>具备 Sass、UnoCSS 等 CSS 预处理与原子化样式工程能力</li>
-			<li>拥有 Linux 运维及计算机网络实践经验，掌握 Serverless 平台部署调优</li>
-			<li>熟悉 Git 协作规范并持续参与 GitHub 开源项目</li>
+			<li>具备敏锐的用户需求感知能力，关注用户体验与可访问性</li>
 			<li>善于运用 AI 工具提升开发效能，注重代码质量与兼容性实践</li>
 		</ul>
 	</InfoSection>
@@ -70,6 +68,8 @@ useSeoMeta({
 		>
 			<ul>
 				<li>负责巨量引擎竞价广告投放平台的前端开发</li>
+				<li>发起静态资源治理专项，发现图文列表加载性能问题，制定报警规则多次回归线上资源问题</li>
+				<li>参与AI图文生成早期产品形态探讨，与产品经理、设计师合作确定产品交互</li>
 			</ul>
 		</Project>
 	</InfoSection>
@@ -108,27 +108,13 @@ useSeoMeta({
 			role="核心贡献者"
 			link="https://github.com/isYangs/GioPic"
 			from="2024.08"
+			to="2025.02"
 			:techs="['Electron', 'Vue 3', 'TypeScript', 'Axios', 'UnoCSS', 'NaiveUI']"
 		>
 			<ul>
 				<li>解决跨平台启动问题，在 Mac OS 开发的项目在 Windows 上无法启动，通过查阅报错资料，修改构建脚本，实现多平台开发运行。</li>
 				<li>提升项目扩展性，针对适配 AWS / 第三方 OSS 存储源时代码扩展性差的问题，重构图床存储程序定义代码，实现第三方图床存储兼容。</li>
 				<li>优化图标显示，针对 Windows 托盘图标、Mac OS 图标比例异常问题，参考 Electron 文档、Apple Developer 文档及 Windows 注册表规范，使用原型设计工具绘制图标并调整逻辑，实现多系统、多颜色模式下托盘图标兼容。</li>
-			</ul>
-		</Project>
-
-		<Project
-			name="XiyouLinux"
-			desc="实验室服务聚合"
-			role="创建者"
-			link="https://www.xiyoulinux.com"
-			from="2024.03"
-			to="至今"
-			:techs="['VitePress', 'Nitro', 'Vue 3', 'TypeScript', 'VueUse', 'Mongoose']"
-		>
-			<ul>
-				<li>重构实验室门户页面并将培养计划构建为网站，降低维护成本，显著提升访问性能。</li>
-				<li>解决原群博项目资源占用高及 XSS 漏洞问题，使用 Nitro + Mongoose 构建前后端分离项目，提升安全性，内存占用降低 81%。</li>
 			</ul>
 		</Project>
 	</InfoSection>
