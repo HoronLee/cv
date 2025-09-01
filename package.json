@@ -1,8 +1,8 @@
 {
   "name": "zhilu-cv",
+  "type": "module",
   "version": "1.2.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -11,19 +11,19 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/icon": "catalog:",
-    "nuxt": "catalog:",
-    "vue": "catalog:",
-    "vue-router": "catalog:"
+    "@iconify-json/logos": "catalog:ui",
+    "@iconify-json/ri": "catalog:ui",
+    "@nuxt/icon": "catalog:ui",
+    "@unocss/nuxt": "catalog:ui",
+    "nuxt": "catalog:framework",
+    "vue": "catalog:framework",
+    "vue-router": "catalog:framework"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "catalog:",
-    "@iconify-json/logos": "catalog:",
-    "@iconify-json/ri": "catalog:",
-    "@unocss/nuxt": "catalog:",
-    "@zinkawaii/stylelint-config": "catalog:",
-    "eslint": "catalog:",
-    "sass-embedded": "catalog:",
-    "unocss": "catalog:"
+    "@antfu/eslint-config": "catalog:quality",
+    "@zinkawaii/stylelint-config": "catalog:quality",
+    "eslint": "catalog:quality",
+    "sass-embedded": "catalog:framework",
+    "stylelint": "catalog:quality"
   }
 }

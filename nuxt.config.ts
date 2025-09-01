@@ -1,56 +1,59 @@
 import process from 'node:process'
 
 export default defineNuxtConfig({
-    app: {
-        head: {
-            htmlAttrs: {
-                lang: 'zh',
-            },
-        },
-    },
+	app: {
+		head: {
+			htmlAttrs: {
+				lang: 'zh',
+			},
+		},
+		rootAttrs: {
+			id: 'zhilu-cv',
+		},
+	},
 
-    css: [
-        '~/assets/main.scss',
-    ],
+	css: [
+		'~/assets/main.scss',
+	],
 
-    compatibilityDate: '2025-03-11',
+	compatibilityDate: '2025-03-11',
 
-    devtools: {
-        enabled: false,
-    },
+	devtools: {
+		enabled: false,
+	},
 
-    features: {
-        inlineStyles: false,
-    },
+	features: {
+		inlineStyles: false,
+	},
 
-    routeRules: {
-        // 网站图标
-        '/favicon.ico': { redirect: 'https://wsrv.nl/?url=github.com/L33Z22L11.png%3fsize=96&mask=circle' },
-    },
+	routeRules: {
+		// 网站图标
+		'/favicon.ico': { redirect: 'https://wsrv.nl/?url=github.com/L33Z22L11.png%3fsize=96&mask=circle' },
+	},
 
-    runtimeConfig: {
-        public: {
-            // 从 .env 文件中读取的变量
-            name: process.env.NAME,
-            phone: process.env.PHONE,
-        },
-    },
+	runtimeConfig: {
+		public: {
+			// 从 .env 文件中读取的变量
+			name: process.env.NAME,
+			phone: process.env.PHONE,
+		},
+	},
 
-    vite: {
-        server: {
-            // 预先允许从其他域名访问开发环境，但 --host 才会在所有网络接口上启动监听
-            allowedHosts: true,
-        },
-    },
+	vite: {
+		server: {
+			// 预先允许从其他域名访问开发环境，但 --host 才会在所有网络接口上启动监听
+			allowedHosts: true,
+		},
+	},
 
-    // @keep-sorted
-    modules: [
-        '@nuxt/icon',
-        '@unocss/nuxt',
-    ],
+	// @keep-sorted
+	modules: [
+		'@nuxt/icon',
+		'@unocss/nuxt',
+	],
 
-    icon: {
-        // 默认是 CSS Mask 模式，在低级 PDF 阅读器中可能无法正常显示
-        mode: 'svg',
-    },
+	icon: {
+		// 默认是 CSS Mask 模式，在低级 PDF 阅读器中可能无法正常显示
+		mode: 'svg',
+	},
 })
