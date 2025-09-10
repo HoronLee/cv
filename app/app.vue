@@ -12,7 +12,7 @@ useSeoMeta({
 </script>
 
 <template>
-<Builder class="block mx-1 my-.5 text-right print:hidden" />
+<Builder class="block print:hidden" m="x-1 y-.5" text="right" />
 <article
 	bg="white @dark:slate/10 print:transparent"
 	p="3% print:2"
@@ -33,7 +33,7 @@ useSeoMeta({
 			<InfoLink to="mailto:hi@zhilu.cyou" />
 		</InfoLi>
 
-		<InfoLi icon="ri:github-fill" label="GitHub">
+		<InfoLi icon="ri:github-line" label="GitHub">
 			<InfoLink to="https://github.com/L33Z22L11">
 				L33Z22L11
 			</InfoLink>

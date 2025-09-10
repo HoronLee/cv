@@ -35,10 +35,10 @@ cv.zhilu.cyou
 
 ```bash
 # 安装依赖
-pnpm install
+pnpm i
 
 # 开发模式
-pnpm run dev
+pnpm dev
 ```
 
 ### 添加图标

@@ -6,6 +6,10 @@ export default defineNuxtConfig({
 			htmlAttrs: {
 				lang: 'zh',
 			},
+			link: [
+				// "InterVariable", "Inter", "InterDisplay"
+				{ rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css', media: 'print', onload: 'this.media="all"' },
+			],
 		},
 		rootAttrs: {
 			id: 'zhilu-cv',

@@ -9,19 +9,20 @@
 }
 
 :root {
-	font-family: sans-serif;
+	font-family: InterVariable, "Noto Sans SC", system-ui, sans-serif;
+	font-variant-alternates: styleset(open-digits, disambiguation, square-punctuation, square-quotes);
 	line-height: 1.4;
-	color-scheme: light dark;
 	word-wrap: break-word;
-	
-	@media (max-width: 768px){
+	color-scheme: light dark;
+
+	@media (max-width: 768px) {
 		background-color: transparent;
 	}
 
 	@media screen {
-		margin: 0 auto;
 		max-width: 20cm;
-		background-color: #0055ff08;
+		margin: 0 auto;
+		background-color: #0055FF08;
 	}
 }
 
@@ -43,19 +44,16 @@ p, li {
 }
 
 code, pre {
-	font-family: "Cascadia Code", "monospace", "Noto Sans Mono", Consolas, monospace;
+	/* stylelint-disable-next-line font-family-name-quotes */
+	font-family: "JetBrains Mono", "Cascadia Code", "monospace", "Noto Sans Mono", Consolas, monospace;
 }
 
 menu, ol, ul {
-	padding-inline-start: .75em;
+	padding-inline-start: 1em;
 }
 
 li {
-	margin-block: 0.25em;
-
-	&::marker {
-		content: "·";
-	}
+	margin: 0.25em 0;
 }
 
 button {
