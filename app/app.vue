@@ -62,14 +62,14 @@ useSeoMeta({
 
 	<InfoSection title="实习经历">
 		<Project
-			name="北京有竹居网络技术有限公司"
-			desc="CMPT-商业平台技术-前端"
+			name="字节跳动"
+			desc="中国商业产品与技术-巨量引擎竞价广告投放平台-前端开发"
 			from="2025.05"
 		>
 			<ul>
-				<li>负责巨量引擎竞价广告投放平台的前端开发</li>
+				<li>“简单投”页面实现说明文案动态展示/配置能力，发现并解决投放平台十余处用户体验问题</li>
 				<li>发起静态资源治理专项，发现图文列表加载性能问题，制定报警规则多次回归线上资源问题</li>
-				<li>参与AI图文生成早期产品形态探讨，与产品经理、设计师合作确定产品交互</li>
+				<li>内网技术社区文章登日榜周榜，主讲AD技术圆桌会、商业化欢乐Talk各一期</li>
 			</ul>
 		</Project>
 	</InfoSection>
@@ -84,21 +84,10 @@ useSeoMeta({
 			:techs="['Nuxt', 'Vue 3', 'TypeScript', 'Pinia', 'Scss']"
 		>
 			<ul>
-				<li>
-					在构建 SSG 静态站点过程中，通过最小复现成功定位 Nuxt 3 数据绑定异常问题，向 Nuxt 提交的
-					<InfoLink to="https://github.com/nuxt/nuxt/issues/30916">
-						Issue#30916
-					</InfoLink> 被采纳修复，推动框架迭代。
-				</li>
-				<li>
-					使用 MDC 语法在 Markdown 渲染 Vue 组件时发现 attrs 异常转义，通过最小复现检出异常 AST，提出
-					<InfoLink to="https://github.com/nuxt-modules/mdc/issues/296">
-						Issue#296
-					</InfoLink> 后解决。
-				</li>
-				<li>
-					通过 Google Search Console 监测发现境外繁体镜像站点，参阅 Whois、HTTP Header 等信息，定位到 Cloudflare 反代 + 域名替换的行为机制，开发出恶意反代跳转回原站的方案；同时排查 SEO 问题，最终达到月 PV 10K。
-				</li>
+				<li>开源项目获 120+Stars，15+真实下游用户，通过 GitHub、交流群持续迭代项目，适配多个云构建平台的 SSR/SSG 功能。</li>
+				<li>发现上游多处不合预期的问题，通过提交 Issue / PR、打 Patch 等方式修复。</li>
+				<li>精校响应式设计、深色模式体验、文字排版布局，设计风格优雅统一，组件系统完善。</li>
+				<li>通过 Google Search Console 监测发现境外繁体镜像站点，参阅 Whois、HTTP Header 等信息，定位到 Cloudflare 反代 + 域名替换的行为机制，开发出恶意反代跳转回原站的方案；同时排查 SEO 问题，优化至月 PV 10K。</li>
 			</ul>
 		</Project>
 
@@ -112,9 +101,9 @@ useSeoMeta({
 			:techs="['Electron', 'Vue 3', 'TypeScript', 'Axios', 'UnoCSS', 'NaiveUI']"
 		>
 			<ul>
-				<li>解决跨平台启动问题，在 Mac OS 开发的项目在 Windows 上无法启动，通过查阅报错资料，修改构建脚本，实现多平台开发运行。</li>
-				<li>提升项目扩展性，针对适配 AWS / 第三方 OSS 存储源时代码扩展性差的问题，重构图床存储程序定义代码，实现第三方图床存储兼容。</li>
-				<li>优化图标显示，针对 Windows 托盘图标、Mac OS 图标比例异常问题，参考 Electron 文档、Apple Developer 文档及 Windows 注册表规范，使用原型设计工具绘制图标并调整逻辑，实现多系统、多颜色模式下托盘图标兼容。</li>
+				<li>解决跨平台启动问题，在 macOS 开发的项目在 Windows 上无法启动，通过查阅报错资料，修改构建脚本，实现多平台开发运行。</li>
+				<li>提升项目扩展性，针对适配 AWS S3 / 第三方 OSS 存储源时代码扩展性差的问题，重构图床存储程序定义代码，实现第三方图床存储兼容。</li>
+				<li>优化图标显示，针对 Windows 托盘图标、macOS 启动台图标比例异常问题，参考 Electron、Apple Developer 等文档规范，使用原型设计工具绘制图标并调整逻辑，实现多系统、多颜色模式下托盘、桌面图标完美显示。</li>
 			</ul>
 		</Project>
 	</InfoSection>
