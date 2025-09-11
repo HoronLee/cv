@@ -12,7 +12,7 @@ useSeoMeta({
 </script>
 
 <template>
-<Builder class="block print:hidden" m="x-1 y-.5" text="right" />
+<Builder class="block print:hidden" w="fit" m="is-auto x-1 y-.5" />
 <article
 	bg="white @dark:slate/10 print:transparent"
 	p="3% print:2"
