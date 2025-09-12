@@ -15,7 +15,7 @@ defineProps<{
 	<div bg="slate-400/15" m="x--2 y-1.5" p="x-2 y-.5" rounded="md">
 		<span m="ie-2" font="bold">{{ name }}</span>
 		<span float="end">{{ from }} - {{ to ?? '至今' }}</span>
-		<span flex="inline" m="ie-2" op="60">{{ desc }}{{ role ? ` · ${role}` : '' }}</span>
+		<span flex="inline" m="ie-2" text="slate-500 @dark:slate">{{ desc }}{{ role ? ` · ${role}` : '' }}</span>
 	</div>
 
 	<p text="sm" m="y-1" tracking="normal" class="empty:hidden">

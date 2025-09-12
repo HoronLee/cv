@@ -15,7 +15,7 @@ useSeoMeta({
 <Builder class="block print:hidden" w="fit" m="is-auto x-1 y-.5" />
 <article
 	bg="white @dark:slate/10 print:transparent"
-	p="3% print:2"
+	p="6 print:x-2 print:y-0"
 	text="3.7"
 	tracking="wide"
 	rounded="xl print:0"
