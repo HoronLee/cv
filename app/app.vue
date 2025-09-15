@@ -57,6 +57,10 @@ useSeoMeta({
 		<InfoLi icon="ri:graduation-cap-line" label="学历">
 			本科在读 (2027 届)
 		</InfoLi>
+
+		<InfoLi icon="ep:position" label="期望岗位">
+			运维 & 云原生开发
+		</InfoLi>
 	</ul>
 
 	<InfoSection title="个人技能">
