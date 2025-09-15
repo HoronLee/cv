@@ -5,7 +5,7 @@ const name = publicConfig.name || '**然'
 const phone = publicConfig.phone || '151****0653'
 
 useSeoMeta({
-	title: `${name} - 运维&云原生开发实习`,
+	title: `${name} - 运维&云原生开发`,
 	description: `${name}的运维&云原生开发实习简历`,
 	robots: 'noindex, nofollow',
 })
