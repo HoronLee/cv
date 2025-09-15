@@ -1,12 +1,12 @@
 <script setup lang="ts">
 const publicConfig = useRuntimeConfig().public
 
-const name = publicConfig.name || '**璐'
-const phone = publicConfig.phone || '133****9192'
+const name = publicConfig.name || '**然'
+const phone = publicConfig.phone || '151****0653'
 
 useSeoMeta({
-	title: `${name} - 前端开发实习`,
-	description: `${name}的前端开发实习简历`,
+	title: `${name} - 运维&云原生开发实习`,
+	description: `${name}的运维&云原生开发实习简历`,
 	robots: 'noindex, nofollow',
 })
 </script>
@@ -30,12 +30,18 @@ useSeoMeta({
 		</InfoLi>
 
 		<InfoLi icon="ri:mail-line" label="邮箱">
-			<InfoLink to="mailto:hi@zhilu.cyou" />
+			<InfoLink to="mailto:horonlee@foxmail.com" />
 		</InfoLi>
 
 		<InfoLi icon="ri:github-line" label="GitHub">
-			<InfoLink to="https://github.com/L33Z22L11">
-				L33Z22L11
+			<InfoLink to="https://github.com/HoronLee">
+				HoronLee
+			</InfoLink>
+		</InfoLi>
+
+		<InfoLi icon="ri:blogger-line" label="Blog">
+			<InfoLink to="https://blog.horonlee.com">
+				blog.horonlee.com
 			</InfoLink>
 		</InfoLi>
 
@@ -44,74 +50,83 @@ useSeoMeta({
 		</InfoLi>
 
 		<InfoLi icon="ri:school-line" label="学校">
-			西安邮电大学 (计算机科学与技术)
+			苏州科技大学 (计算机科学与技术)<br>
+			<!-- 南京城市职业学院 (云计算技术与应用) -->
 		</InfoLi>
 
 		<InfoLi icon="ri:graduation-cap-line" label="学历">
-			本科在读 (2026 届)
+			本科在读 (2027 届)
 		</InfoLi>
 	</ul>
 
 	<InfoSection title="个人技能">
 		<ul>
-			<li>掌握 Vue 3、Nuxt 4、TypeScript，熟练掌握响应式设计、UI/UX 优化</li>
-			<li>具备敏锐的用户需求感知能力，关注用户体验与可访问性</li>
-			<li>善于运用 AI 工具提升开发效能，注重代码质量与兼容性实践</li>
+			<li>熟练掌握 Linux 服务器运维，熟悉 CentOS、Ubuntu 等发行版环境下的常用命令与服务配置。</li>
+			<li>熟悉 Docker 容器化技术，能够编写 Dockerfile 和 Docker-Compose；熟悉 Kubernetes  核心概念与集群运维，具备在 K8s 环境中部署与管理应用的能力。</li>
+			<li>熟悉 DevOps 理念与工作流，能够使用 Jenkins 与 GitLab 搭建 CI/CD 流水线，实现应用的自动化构建与部署。</li>
+			<li>熟练掌握 Go 语言，具备 Web 后端开发能力，熟悉微服务架构；了解 Python 和 Shell ，可以编写简单的自动化脚本。</li>
+			<li>了解常用监控工具（如 Prometheus、Grafana）的使用，能够对系统进行性能监控与故障排查。</li>
+			<li>了解 MySQL 与 Redis 运维， MySQL 主从复制、读写分离架构，并能够配置 Redis 哨兵模式。</li>
 		</ul>
 	</InfoSection>
 
 	<InfoSection title="实习经历">
 		<Project
-			name="字节跳动"
-			desc="中国商业产品与技术-巨量引擎竞价广告投放平台-前端开发"
-			from="2025.05"
+			name="皓月互联"
+			desc="PaaS 云服务商"
+			from="2023.05"
+			to="2025.02"
 		>
 			<ul>
-				<li>“简单投”页面实现说明文案动态展示/配置能力，发现并解决投放平台十余处用户体验问题</li>
-				<li>发起静态资源治理专项，发现图文列表加载性能问题，制定报警规则多次回归线上资源问题</li>
-				<li>内网技术社区文章登日榜周榜，主讲AD技术圆桌会、商业化欢乐Talk各一期</li>
+				<li>负责搭建与维护基于 Hyper-V 的 PaaS 云服务平台</li>
+				<li>负责搭建财务系统，参与售前与售后的各类工作</li>
+				<li>负责服务器硬件的维护与管理，确保系统稳定运行</li>
+				<li>协助客户解决使用过程中遇到的各类问题，提供技术支持与咨询服务</li>
+				<li>参与技术文档编写与知识分享，提升团队整体技术水平。</li>
 			</ul>
 		</Project>
 	</InfoSection>
 
 	<InfoSection title="项目经验">
 		<Project
-			name="blog-v3"
-			desc="个人博客"
-			role="创建者"
-			link="https://github.com/L33Z22L11/blog-v3"
-			from="2024.08"
-			:techs="['Nuxt', 'Vue 3', 'TypeScript', 'Pinia', 'Scss']"
+			name="Jenkins CI/CD in K8s"
+			desc="基于K8s的Jenkins持续集成与部署"
+			role="流程设计者"
+			link="https://blog.horonlee.com/posts/K8sJenkinsSlaveCICD"
+			from="2023.08"
+			to="2023.09"
+			:techs="['Linux', 'Jenkins', 'Docker', 'Kubernetes', 'Gitea', 'Harbor', 'Vue 3']"
 		>
 			<ul>
-				<li>开源项目获 120+Stars，15+真实下游用户，通过 GitHub、交流群持续迭代项目，适配多个云构建平台的 SSR/SSG 功能。</li>
-				<li>发现上游多处不合预期的问题，通过提交 Issue / PR、打 Patch 等方式修复。</li>
-				<li>精校响应式设计、深色模式体验、文字排版布局，设计风格优雅统一，组件系统完善。</li>
-				<li>通过 Google Search Console 监测发现境外繁体镜像站点，参阅 Whois、HTTP Header 等信息，定位到 Cloudflare 反代 + 域名替换的行为机制，开发出恶意反代跳转回原站的方案；同时排查 SEO 问题，优化至月 PV 10K。</li>
+				<li>基于Kubernetes集群搭建Jenkins-Slave模式持续集成与部署环境，实现对 Vue 项目的自动化构建与部署。</li>
+				<li>使用 Gitea 作为代码仓库(也可以使用 GitLab)，结合 Webhooks 触发 Jenkins 流水线，实现代码提交后自动触发构建流程。</li>
+				<li>利用 Docker 容器，将应用打包为镜像，并推送到 Harbor 私有镜像仓库，确保镜像的安全与高效分发。</li>
+				<li>对 CI/CD 有了更深入的理解，并掌握了在 K8s 环境中部署与管理 Jenkins 的技能。</li>
 			</ul>
 		</Project>
 
 		<Project
-			name="GioPic"
-			desc="图床上传桌面程序"
-			role="核心贡献者"
-			link="https://github.com/isYangs/GioPic"
+			name="Krathub"
+			desc="基于Kratos的微服务快开框架"
+			role="创建者"
+			link="https://github.com/HoronLee/Krathub"
 			from="2024.08"
-			to="2025.02"
-			:techs="['Electron', 'Vue 3', 'TypeScript', 'Axios', 'UnoCSS', 'NaiveUI']"
+			:techs="['Kratos', 'Go', 'gRPC', 'Consul', 'Jaeger', 'Prometheus', 'Grafana']"
 		>
 			<ul>
-				<li>解决跨平台启动问题，在 macOS 开发的项目在 Windows 上无法启动，通过查阅报错资料，修改构建脚本，实现多平台开发运行。</li>
-				<li>提升项目扩展性，针对适配 AWS S3 / 第三方 OSS 存储源时代码扩展性差的问题，重构图床存储程序定义代码，实现第三方图床存储兼容。</li>
-				<li>优化图标显示，针对 Windows 托盘图标、macOS 启动台图标比例异常问题，参考 Electron、Apple Developer 等文档规范，使用原型设计工具绘制图标并调整逻辑，实现多系统、多颜色模式下托盘、桌面图标完美显示。</li>
+				<li>基于Kratos V2.0开发，诣在于构建一个开发快速，专注于业务逻辑的微服务框架。</li>
+				<li>内置服务注册与发现和配置中心(Consul/Nacos)、分布式追踪(OpenTelemetry|Jaeger)、监控告警(Prometheus)等功能，简化微服务开发流程。</li>
+				<li>内建gRPC客户端工厂模式，并且带有熔断和链路追踪，可以方便地与其他服务进行通信。</li>
+				<li>开发过程中对Bilibili开源的kratos项目进行了研究，并提交了对Consul服务发现在使用Traefik作为Provider的时候的适配代码。</li>
+				<li>对 gRPC、Protobuf 和微服务架构有了更深入的理解，并掌握了在实际项目中应用的能力。</li>
 			</ul>
 		</Project>
 	</InfoSection>
 
 	<InfoSection title="个人证书">
 		<ul>
-			<li>CET-4、CET-6</li>
-			<li>中国大学生计算机设计大赛西北赛区二等奖</li>
+			<li>2024年江苏省职业院校技能大赛云计算赛项一等奖</li>
+			<li>2023年金砖国家职业院校技能大赛云计算赛项江苏选拔赛一等奖</li>
 		</ul>
 	</InfoSection>
 </article>
