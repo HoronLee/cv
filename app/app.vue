@@ -3,6 +3,7 @@ const publicConfig = useRuntimeConfig().public
 
 const name = publicConfig.name || '**然'
 const phone = publicConfig.phone || '151****0653'
+const avatar = publicConfig.avatar
 
 useSeoMeta({
 	title: `${name} - DevOps运维&云原生开发`,
@@ -20,9 +21,17 @@ useSeoMeta({
 	tracking="wide"
 	rounded="xl print:0"
 >
-	<h1 text="center" m="be-4">
-		{{ name }}
-	</h1>
+	<div class="flex items-center justify-between">
+		<div>
+			<h1 text="4xl bold">
+				{{ name }}
+			</h1>
+			<h2 text="xl" tracking="wider" font="light" m="t-2">
+				DevOps运维&云原生开发
+			</h2>
+		</div>
+		<img :src="avatar" alt="个人照片" class="w-25 h-35 rounded-md object-cover">
+	</div>
 
 	<ul columns="sm:2" p="is-0">
 		<InfoLi icon="ri:smartphone-line" label="电话">
@@ -62,10 +71,10 @@ useSeoMeta({
 			本科在读 (2027 届)
 		</InfoLi>
 
-		<InfoLi icon="ep:position" label="期望岗位">
+		<!-- <InfoLi icon="ep:position" label="期望岗位">
 			DevOps运维<br>
 			云原生开发
-		</InfoLi>
+		</InfoLi> -->
 	</ul>
 
 	<InfoSection title="个人技能">
@@ -150,7 +159,7 @@ useSeoMeta({
 	<InfoSection title="个人证书">
 		<ul>
 			<li>2024年江苏省职业院校技能大赛云计算赛项一等奖</li>
-			<li>2023年金砖国家职业院校技能大赛云计算赛项江苏选拔赛一等奖</li>
+			<li>2023年金砖国家职业院校技能大赛云计算赛项国赛一等奖</li>
 		</ul>
 	</InfoSection>
 </article>

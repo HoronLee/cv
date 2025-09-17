@@ -40,6 +40,7 @@ export default defineNuxtConfig({
 			// 从 .env 文件中读取的变量
 			name: process.env.NAME,
 			phone: process.env.PHONE,
+			avatar: process.env.NUXT_PRIVATE_AVATAR || '/img/avatar.png',
 		},
 	},
 
