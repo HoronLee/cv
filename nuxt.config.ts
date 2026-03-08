@@ -60,5 +60,11 @@ export default defineNuxtConfig({
 	icon: {
 		// 默认是 CSS Mask 模式，在低级 PDF 阅读器中可能无法正常显示
 		mode: 'svg',
+		customCollections: [
+			{
+				prefix: 'custom',
+				dir: './public/icons',
+			},
+		],
 	},
 })
