@@ -126,16 +126,17 @@ useSeoMeta({
 
         <InfoSection title="项目经验">
             <Project
-                name="Krathub"
+                name="Servora"
                 desc="基于Kratos的微服务快开框架"
-                role="创建者"
-                link="https://github.com/HoronLee/Krathub"
+                role="核心开发者"
+                link="https://github.com/Servora-Kit/servora"
                 from="2024.08"
                 :techs="[
-                    'Kratos',
                     'Go',
+                    'Kratos',
+                    'Protobuf',
                     'gRPC',
-                    'Consul',
+                    'OpenTelemetry',
                     'Jaeger',
                     'Prometheus',
                     'Grafana',
@@ -143,21 +144,33 @@ useSeoMeta({
             >
                 <ul>
                     <li>
-                        基于Kratos
-                        V2.0开发，诣在于构建一个开发快速，专注于业务逻辑的微服务框架。
+                        基于 Kratos V2 开发的微服务快开框架,采用 DDD 分层与
+                        Proto First 开发方式,覆盖 API
+                        定义、代码生成、服务实现、前端联调、可观测性与容器化开发链路。
                     </li>
                     <li>
-                        内置服务注册与发现和配置中心(Consul/Nacos)、分布式追踪(OpenTelemetry|Jaeger)、监控告警(Prometheus)等功能，简化微服务开发流程。
+                        使用 Buf v2 workspace 管理 Proto 定义,支持 gRPC、HTTP
+                        双协议接口与 OpenAPI 文档自动生成,实现前后端类型安全的
+                        API 联调。
                     </li>
                     <li>
-                        内建gRPC客户端工厂模式，并且带有熔断和链路追踪，可以方便地与其他服务进行通信。
+                        采用 Go workspace 多模块架构,使用 Wire 进行依赖注入,Ent
+                        作为主 ORM,遵循 service → biz → data 的 DDD 分层设计。
                     </li>
                     <li>
-                        开发过程中对Bilibili开源的kratos项目进行了研究，并提交了对Consul服务发现在使用Traefik作为Provider的时候的适配代码。
+                        集成完整的可观测性栈(OTel Collector / Jaeger / Loki /
+                        Prometheus /
+                        Grafana),支持分布式追踪、日志聚合与监控告警。
                     </li>
                     <li>
-                        对 gRPC、Protobuf
-                        和微服务架构有了更深入的理解，并掌握了在实际项目中应用的能力。
+                        前后端同仓开发,前端使用 Vue 3 + Vite + TypeScript +
+                        Bun,通过 Proto 自动生成 TypeScript HTTP
+                        客户端,确保类型一致性。
+                    </li>
+                    <li>
+                        开发过程中对 Bilibili 开源的 Kratos
+                        项目进行了深入研究,并为 Consul 服务发现在使用 Traefik
+                        作为 Provider 时提交了适配代码。
                     </li>
                 </ul>
             </Project>
