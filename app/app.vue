@@ -25,7 +25,7 @@ useSeoMeta({
           DevOps运维&云原生开发
         </h2>
       </div>
-      <img :src="avatar" alt="个人照片" class="w-25 h-35 rounded-md object-cover" />
+      <!-- <img :src="avatar" alt="个人照片" class="w-25 h-35 rounded-md object-cover" /> -->
     </div>
 
     <ul columns="sm:2" p="is-0">
@@ -146,11 +146,6 @@ useSeoMeta({
             集成完整的可观测性栈(OTel Collector / Jaeger / Loki /
             Prometheus /
             Grafana),支持分布式追踪、日志聚合与监控告警。
-          </li>
-          <li>
-            前后端同仓开发,前端使用 Vue 3 + Vite + TypeScript +
-            Bun,通过 Proto 自动生成 TypeScript HTTP
-            客户端,确保类型一致性。
           </li>
           <li>
             开发过程中对 Bilibili 开源的 Kratos
