@@ -119,6 +119,7 @@ useSeoMeta({
       <Project name="Servora" desc="基于Kratos的微服务快开框架" role="核心开发者" link="https://github.com/Servora-Kit/servora"
         from="2024.08" :techs="[
           'Go',
+          'TypeScript',
           'Kratos',
           'Protobuf',
           'gRPC',
