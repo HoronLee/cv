@@ -6,7 +6,7 @@ defineProps<{
 	from: string
 	to?: string
 	link?: string
-	techs?: Tech[]
+	techs?: readonly Tech[]
 }>()
 </script>
 
